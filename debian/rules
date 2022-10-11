@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+PACKAGE = $(shell dh_listpackages)
+TMP     = $(CURDIR)/debian/$(PACKAGE)
+
+%:
+	dh $@
+
+override_dh_installexamples:
+	dh_installexamples
+	# the examples are just examples, really, not intended to be executed
+	chmod -x $(TMP)/usr/share/doc/libperl6-export-perl/examples/*

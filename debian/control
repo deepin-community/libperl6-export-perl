@@ -1,0 +1,24 @@
+Source: libperl6-export-perl
+Section: perl
+Priority: optional
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Allard Hoeve <allard@byte.nl>,
+ gregor herrmann <gregoa@debian.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/Perl6-Export
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libperl6-export-perl.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libperl6-export-perl.git
+Testsuite: autopkgtest-pkg-perl
+
+Package: libperl6-export-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: implementation of the Perl 6 'is export(...)' trait
+ Perl6::Export prototypes the Perl 6 'exported' and 'exportable' traits
+ in Perl 5.
+ .
+ Instead of messing around with @EXPORT arrays, you just declare which
+ subs are to be exported (or are exportable on request) as part of
+ those subs.

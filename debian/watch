@@ -1,0 +1,2 @@
+version=3
+https://metacpan.org/release/Perl6-Export   .*/Perl6-Export-v?(\d[\d.]+)\.(?:tar(?:\.gz|\.bz2)?|tgz|zip)
